@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/icon.png">
+    <link rel="mask-icon" color="#EF7425" href="src/img/icon.png">
+
+    <title>Sitca</title>
+
+    <link href="src/output.css" rel="stylesheet">
+    <link href="src/splide.min.css" rel="stylesheet">
+    <link href="src/aos.css" rel="stylesheet">
+    <script src="src/jquery.min.js"></script>
+    <script src="src/splide.min.js"></script>
+    <script src="src/aos.js"></script>
+    <script src="src/main.js" defer></script>
+</head>
+<body>
+    <header class="fixed top-0 right-0 left-0 z-90 transition duration-300 ease-in-out" id="contentHeader"></header>
+    <main>
+        <a href="#principal" class="transition-all duration-500 fixed right-0 bg-white z-50 mb-6 mr-6 rounded-full w-[50px] h-[50px] flex justify-center items-center shadow-xl bottom-[-100%] px-3" id="top"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 328l144-144 144 144"/></svg></a>
+        <section class="w-full h-100 rounded-b-[100px] overflow-hidden relative bg-gray-950 flex items-center" id="principal">
+            <div class="bg-[url(img/banner-01.jpg)] bg-cover bg-center absolute inset-0 w-full h-full opacity-50"></div>
+            <div class="bg-linear-to-r from-[#002356] to-transparent bg-cover absolute inset-0 w-full h-full"></div>
+            <div class="relative w-full px-15 lg:px-25 xl:px-35 2xl:px-50 text-3xl md:text-5xl xl:text-7xl text-white font-bold text-center" data-aos="zoom-in" data-aos-duration="1000">
+               Productos
+            </div>
+        </section>
+        <div class="w-full md:w-[700px] h-[700px] absolute -z-10">
+            <img class="object-contain w-full h-full top-[-50%] left-[-50%] absolute -z-10" src="src/img/circle-01.png" alt="circle">
+        </div>
+        <section class="pt-10 pb-10 lg:pt-30 relative">
+            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto text-center px-5 md:px-10 xl:px-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="800">
+                <h4 class="text-2xl lg:text-4xl 2xl:text-5xl font-bold">¿Necesitas un punto de venta?</h4>
+                <p class="opacity-70">Si estás presentando inconvenientes o deseas adquirir un nuevo equipo, estamos aquí para ayudarte:</p>
+            </div>
+        </section>
+        <section class="flex flex-col pb-5 xl:pb-20 relative" data-aos="fade-up" data-aos-delay="1000">
+            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto flex justify-center pt-5 lg:pt-10 2xl:pt-20 pb-10 py-10  px-5 md:px-10 xl:px-0"> 
+                <div class="custom-pagination product-button w-full grid grid-cols-2 md:grid-cols-5 gap-5 justify-items-center"></div>
+            </div>
+            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto pt-5 2xl:pt-10 pb-5 lg:pb-10 px-5 md:px-10 xl:px-0 rounded-l-4xl flex justify-start ">
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 2xl:gap-20">
+                                    <div class="bg-neutral-50 h-[250px] lg:h-[450px] rounded-3xl p-10 flex justify-center">
+                                        <img src="src/img/pos-1.png" alt="Aisino A75" class="h-full">
+                                    </div>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="border-b border-gray-100 pb-3">
+                                            <h5 class="text-2xl 2xl:text-3xl font-semibold">Aisino A75</h5>
+                                            <p class="font-light opacity-70">
+                                                Punto de venta
+                                            </p>
+                                        </div>
+                                        <h6 class="font-semibold">Características</h6>
+                                        <p class="font-light ">Dispositivo con pantalla táctil de alta resolución e impresora integrada. Procesamiento en tiempo real y múltiples servicios.</p>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="60" d="M48 192h416M128 300h48v20h-48z"/></svg>
+                                            </div>
+                                            <p>Contactless</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><circle cx="256" cy="256.02" r="32" class="fill-white/50"/><path d="M184.25 192.25a96 96 0 000 127.52M327.77 319.77a96 96 0 000-127.52M133.28 141.28a168 168 0 000 229.44M378.72 370.72a168 168 0 000-229.44M435 416a240.34 240.34 0 000-320M77 96a240.34 240.34 0 000 320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Inalámbrico</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path d="M332.41 310.59a115 115 0 00-152.8 0M393.46 249.54a201.26 201.26 0 00-274.92 0M447.72 182.11a288 288 0 00-383.44 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 416a32 32 0 1132-32 32 32 0 01-32 32z" class="fill-white/50"/></svg>
+                                            </div>
+                                            <p>Wi-Fi</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+                                            </div>
+                                            <p>Global Band</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Recargas de servicios</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><ellipse cx="256" cy="128" rx="192" ry="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M448 214c0 44.18-86 80-192 80S64 258.18 64 214M448 300c0 44.18-86 80-192 80S64 344.18 64 300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M64 127.24v257.52C64 428.52 150 464 256 464s192-35.48 192-79.24V127.24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Dual-Band</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="128" y="16" width="256" height="480" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M176 16h24a8 8 0 018 8h0a16 16 0 0016 16h64a16 16 0 0016-16h0a8 8 0 018-8h24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Pantalla táctil</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path d="M384 368h24a40.12 40.12 0 0040-40V168a40.12 40.12 0 00-40-40H104a40.12 40.12 0 00-40 40v160a40.12 40.12 0 0040 40h24" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><rect x="128" y="240" width="256" height="208" rx="24.32" ry="24.32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path d="M384 128v-24a40.12 40.12 0 00-40-40H168a40.12 40.12 0 00-40 40v24" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><circle cx="392" cy="184" r="24" class="fill-white/50"/></svg>
+                                            </div>
+                                            <p>Impresora</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 2xl:gap-20">
+                                    <div class="bg-neutral-50 h-[250px] lg:h-[450px] rounded-3xl p-10 flex justify-center">
+                                        <img src="src/img/pos-2.png" alt="Aisino A80" class="h-full">
+                                    </div>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="border-b border-gray-100 pb-3">
+                                            <h5 class="text-2xl 2xl:text-3xl font-semibold">Aisino A80</h5>
+                                            <p class="font-light opacity-70">
+                                                Punto de venta
+                                            </p>
+                                        </div>
+                                        <h6 class="font-semibold">Características</h6>
+                                        <p class="font-light ">Diseño ligero y pantalla táctil con ticket digital. Ideal para negocios en movimiento.</p>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="60" d="M48 192h416M128 300h48v20h-48z"/></svg>
+                                            </div>
+                                            <p>Contactless</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><circle cx="256" cy="256.02" r="32" class="fill-white/50"/><path d="M184.25 192.25a96 96 0 000 127.52M327.77 319.77a96 96 0 000-127.52M133.28 141.28a168 168 0 000 229.44M378.72 370.72a168 168 0 000-229.44M435 416a240.34 240.34 0 000-320M77 96a240.34 240.34 0 000 320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Inalámbrico</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path d="M332.41 310.59a115 115 0 00-152.8 0M393.46 249.54a201.26 201.26 0 00-274.92 0M447.72 182.11a288 288 0 00-383.44 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 416a32 32 0 1132-32 32 32 0 01-32 32z" class="fill-white/50"/></svg>
+                                            </div>
+                                            <p>Wi-Fi</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+                                            </div>
+                                            <p>Global Band</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Recargas de servicios</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><ellipse cx="256" cy="128" rx="192" ry="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M448 214c0 44.18-86 80-192 80S64 258.18 64 214M448 300c0 44.18-86 80-192 80S64 344.18 64 300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M64 127.24v257.52C64 428.52 150 464 256 464s192-35.48 192-79.24V127.24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Dual-Band</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="128" y="16" width="256" height="480" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M176 16h24a8 8 0 018 8h0a16 16 0 0016 16h64a16 16 0 0016-16h0a8 8 0 018-8h24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Pantalla táctil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 2xl:gap-20">
+                                    <div class="bg-neutral-50 h-[250px] lg:h-[450px] rounded-3xl p-10 flex justify-center">
+                                        <img src="src/img/pos-3.png" alt="AMP 8200" class="h-full">
+                                    </div>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="border-b border-gray-100 pb-3">
+                                            <h5 class="text-2xl 2xl:text-3xl font-semibold">AMP 8200</h5>
+                                            <p class="font-light opacity-70">
+                                                Punto de venta
+                                            </p>
+                                        </div>
+                                        <h6 class="font-semibold">Características</h6>
+                                        <p class="font-light ">Alta resolución, impresora integrada y procesamiento en tiempo real.</p>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="60" d="M48 192h416M128 300h48v20h-48z"/></svg>
+                                            </div>
+                                            <p>Contactless</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><circle cx="256" cy="256.02" r="32" class="fill-white/50"/><path d="M184.25 192.25a96 96 0 000 127.52M327.77 319.77a96 96 0 000-127.52M133.28 141.28a168 168 0 000 229.44M378.72 370.72a168 168 0 000-229.44M435 416a240.34 240.34 0 000-320M77 96a240.34 240.34 0 000 320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Inalámbrico</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path d="M332.41 310.59a115 115 0 00-152.8 0M393.46 249.54a201.26 201.26 0 00-274.92 0M447.72 182.11a288 288 0 00-383.44 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 416a32 32 0 1132-32 32 32 0 01-32 32z" class="fill-white/50"/></svg>
+                                            </div>
+                                            <p>Wi-Fi</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+                                            </div>
+                                            <p>Global Band</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Recargas de servicios</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><ellipse cx="256" cy="128" rx="192" ry="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M448 214c0 44.18-86 80-192 80S64 258.18 64 214M448 300c0 44.18-86 80-192 80S64 344.18 64 300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M64 127.24v257.52C64 428.52 150 464 256 464s192-35.48 192-79.24V127.24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Dual-Band</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="128" y="16" width="256" height="480" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M176 16h24a8 8 0 018 8h0a16 16 0 0016 16h64a16 16 0 0016-16h0a8 8 0 018-8h24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Pantalla táctil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 2xl:gap-20">
+                                    <div class="bg-neutral-50 h-[250px] lg:h-[450px] rounded-3xl p-10 flex justify-center">
+                                        <img src="src/img/pos-4.png" alt="AMP 8400" class="h-full">
+                                    </div>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="border-b border-gray-100 pb-3">
+                                            <h5 class="text-2xl 2xl:text-3xl font-semibold">AMP 8400</h5>
+                                            <p class="font-light opacity-70">
+                                                Punto de venta
+                                            </p>
+                                        </div>
+                                        <h6 class="font-semibold">Características</h6>
+                                        <p class="font-light ">Diseño compacto, ticket digital y todas las funciones clave.</p>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="60" d="M48 192h416M128 300h48v20h-48z"/></svg>
+                                            </div>
+                                            <p>Contactless</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><circle cx="256" cy="256.02" r="32" class="fill-white/50"/><path d="M184.25 192.25a96 96 0 000 127.52M327.77 319.77a96 96 0 000-127.52M133.28 141.28a168 168 0 000 229.44M378.72 370.72a168 168 0 000-229.44M435 416a240.34 240.34 0 000-320M77 96a240.34 240.34 0 000 320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Inalámbrico</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path d="M332.41 310.59a115 115 0 00-152.8 0M393.46 249.54a201.26 201.26 0 00-274.92 0M447.72 182.11a288 288 0 00-383.44 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 416a32 32 0 1132-32 32 32 0 01-32 32z" class="fill-white/50"/></svg>
+                                            </div>
+                                            <p>Wi-Fi</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+                                            </div>
+                                            <p>Global Band</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Recargas de servicios</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><ellipse cx="256" cy="128" rx="192" ry="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M448 214c0 44.18-86 80-192 80S64 258.18 64 214M448 300c0 44.18-86 80-192 80S64 344.18 64 300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M64 127.24v257.52C64 428.52 150 464 256 464s192-35.48 192-79.24V127.24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Dual-Band</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="128" y="16" width="256" height="480" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M176 16h24a8 8 0 018 8h0a16 16 0 0016 16h64a16 16 0 0016-16h0a8 8 0 018-8h24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Pantalla táctil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 2xl:gap-20">
+                                    <div class="bg-neutral-50 h-[250px] lg:h-[450px] rounded-3xl p-10 flex justify-center">
+                                        <img src="src/img/pos-5.png" alt="AMP 2200" class="h-full">
+                                    </div>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="border-b border-gray-100 pb-3">
+                                            <h5 class="text-2xl 2xl:text-3xl font-semibold">AMP 2200</h5>
+                                            <p class="font-light opacity-70">
+                                                Punto de venta
+                                            </p>
+                                        </div>
+                                        <h6 class="font-semibold">Características</h6>
+                                        <p class="font-light ">PIN Pad compacto y liviano, ideal para conexión con dispositivos móviles vía Bluetooth.</p>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="60" d="M48 192h416M128 300h48v20h-48z"/></svg>
+                                            </div>
+                                            <p>Contactless</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><circle cx="256" cy="256.02" r="32" class="fill-white/50"/><path d="M184.25 192.25a96 96 0 000 127.52M327.77 319.77a96 96 0 000-127.52M133.28 141.28a168 168 0 000 229.44M378.72 370.72a168 168 0 000-229.44M435 416a240.34 240.34 0 000-320M77 96a240.34 240.34 0 000 320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Inalámbrico</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+                                            </div>
+                                            <p>Bluetooth</p>
+                                        </div>
+                                        <div class="flex gap-3 data-pos">
+                                            <div class="w-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                                            </div>
+                                            <p>Recargas de servicios</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-linear-to-r from-blue2-sitca to-blue1-sitca pt-20 px-10 grid grid-cols-1 lg:grid-cols-4 gap-10" id="contentFooter"></footer>
+</body>
+</html>

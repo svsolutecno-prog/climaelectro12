@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/icon.png">
+    <!-- <link rel="mask-icon" color="#EF742 5" href="src/img/icon.png"> -->
+
+    <title>CE12</title>
+
+    <link href="src/output.css" rel="stylesheet">
+    <link href="src/splide.min.css" rel="stylesheet">
+    <link href="src/aos.css" rel="stylesheet">
+    <script src="src/jquery.min.js"></script>
+    <script src="src/splide.min.js"></script>
+    <script src="src/aos.js"></script>
+    <script src="src/jquery.alphanum.js"></script>
+    <script src="src/main.js" defer></script>
+</head>
+<body>
+    <header class="fixed top-0 right-0 left-0 z-90 transition duration-300 ease-in-out" id="contentHeader"></header>
+    <main>
+        <a href="#principal" class="transition-all duration-500 fixed right-0 bg-white z-50 mb-6 mr-6 rounded-full w-[50px] h-[50px] flex justify-center items-center shadow-xl bottom-[-100%] px-3" id="top"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 328l144-144 144 144"/></svg></a>
+        <section class="w-full h-100 rounded-b-[100px] overflow-hidden relative bg-gray-950 flex items-center" id="principal">
+            <div class="bg-[url(img/banner-01.jpg)] bg-cover bg-center absolute inset-0 w-full h-full opacity-50"></div>
+            <div class="bg-linear-to-r from-[#002356] to-transparent bg-cover absolute inset-0 w-full h-full"></div>
+            <div class="relative w-full px-15 lg:px-25 xl:px-35 2xl:px-50 text-3xl md:text-5xl xl:text-7xl text-white font-bold text-center" data-aos="zoom-in" data-aos-duration="1000">
+               CONTACTANOS
+            </div>
+        </section>
+        <div class="w-full md:w-[700px] h-[700px] absolute -z-10">
+            <img class="object-contain w-full h-full top-[-50%] left-[-50%] absolute -z-10" src="src/img/circle-01.png" alt="circle">
+        </div>
+        <section class="pt-10 pb-10 lg:pt-30 relative">
+            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto text-center px-5 md:px-10 xl:px-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="800">
+                <h4 class="text-2xl lg:text-4xl 2xl:text-5xl font-bold">¿Deseas contactarnos?</h4>
+            </div>
+        </section>
+        <section class="pb-15 lg:pb-38 relative" data-aos="fade-up" data-aos-delay="1000">
+            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-20 items-center px-5 md:px-10 xl:px-0">
+                <div class="bg-neutral-50 rounded-4xl p-7 md:p-13 flex flex-col gap-6 text-center">
+                    <div>
+                        <h6 class="text-yellow-sitca font-semibold uppercase text-xs tracking-[7%]">Atención por WhatsApp</h6>
+                    </div>
+                   <p>
+                    Contacta a nuestro equipo de atención al cliente.
+                   </p>
+                   <a href="https://api.whatsapp.com/send/?phone=584241629516&text&type=phone_number&app_absent=0" target="_blank" class="text-sm md:text-base flex justify-center items-center rounded-full py-3 px-5 bg-lime-600 mx-auto gap-3 text-white font-semibold">
+                        <img src="src/img/icon_whatsapp.png" alt="WhatsApp Sitca">
+                        WhatsApp
+                   </a>
+                </div>
+                <div class="bg-neutral-50 rounded-4xl p-7 md:p-13 flex flex-col gap-6 text-center">
+                    <div>
+                        <h6 class="text-yellow-sitca font-semibold uppercase text-xs tracking-[7%]">Redes Sociales</h6>
+                        <!-- <h4 class="text-lg/5 md:text-2xl font-semibold"></h4> -->
+                    </div>
+                   <p>
+                    Siguenos en redes sociales para saber mas sobre nosotroso escribenos un correo.
+                   </p>
+                   <div class="flex flex-wrap gap-3 justify-center">
+                       <a href="https://api.whatsapp.com/send/?phone=584241566229&text&type=phone_number&app_absent=0" target="_blank" class="text-sm md:text-base flex justify-center items-center rounded-full py-3 px-5 bg-lime-600 gap-3 text-white font-semibold">
+                            <img src="src/img/instagram.png" alt="Instagram">
+                            Instagram
+                       </a>
+                       <a href="https://api.whatsapp.com/send/?phone=584241629516&text&type=phone_number&app_absent=0" target="_blank" class="text-sm md:text-base flex justify-center items-center rounded-full py-3 px-5 bg-lime-600 gap-3 text-white font-semibold">
+                            <img src="src/img/icon_mail.png" alt="WhatsApp Sitca">
+                            Email
+                       </a>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-15 lg:py-38 bg-linear-to-r from-blue1-sitca to-blue2-sitca overflow-hidden">
+            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-20 items-center px-5 md:px-10 xl:px-0">
+                <div class="flex flex-col gap-6">
+                   <h4 class="text-2xl lg:text-4xl 2xl:text-5xl text-white font-bold text-center lg:text-left">¿Donde estamos <span class="text-yellow-sitca">Ubicados</span>?</h4>
+                   
+                   <div class="bg-white rounded-4xl p-8">
+                        <p class="text-lg md:text-2xl font-semibold mb-4 text-center lg:text-left">
+                            Taller principal <span class="text-blue1-sitca">Caracas</span> 
+                        </p>
+                        <div class="flex gap-3 flex-col md:flex-row">
+                            <div>
+                                <svg viewBox="0 0 24 24" class="w-10 mx-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z" class="stroke-yellow-sitca" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" class="stroke-yellow-sitca" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p>
+                                Av. Francisco de Miranda, Torre Financiera Caracas (TFC), Piso 5. Altamira-Caracas.
+                            </p>
+                        </div>
+                   </div>
+                </div>
+                <div class="">
+                    <div class="bg-blue1-sitca bg-center min-h-60 lg:min-h-100 rounded-2xl shadow-xl overflow-hidden" data-aos="fade-left" data-aos-duration="1000">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490.3834342317294!2d-66.85055027063903!3d10.4953473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a59ab7f7340a9%3A0x3e4236696a8482c!2sTorre%20Bancamiga!5e0!3m2!1ses!2sve!4v1755089059452!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="w-full md:w-[700px] h-[700px] absolute right-0 overflow-hidden">
+            <img class="object-contain w-full h-full top-[-50%] right-[-50%] absolute" src="src/img/circle-01.png" alt="circle">
+        </div>
+        <section class="py-15 lg:py-38 relative" data-aos="fade-up" data-aos-delay="1000">
+            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto px-5 md:px-10 xl:px-0">
+                <div class="mb-6">
+                    <h4 class="text-2xl lg:text-4xl 2xl:text-5xl font-bold text-center">Talleres externos</h4>
+                    <p class="opacity-70 text-center">Para más información escribe a los medios de contacto.</p>
+                </div>
+                <div class="w-full rounded-4xl shadow-lg p-4 md:p-8">
+                    <div class="search-box flex flex-col md:flex-row gap-2 mb-5 items-end">
+                        <div class="w-full md:w-auto">
+                            <label for="stateSelect" class="block mb-2 text-sm font-medium">Filtrar por estado</label>
+                            <select id="stateSelect" class="w-full md:w-auto border border-gray-300 text-gray-900 text-sm rounded-lg focus:blue1-sitca focus:border-blue1-sitca block p-2.5 focus-visible:outline-0">
+                            </select>
+                        </div>
+                        <div class="w-full md:w-auto lg:w-sm">
+                            <label for="first_name" class="block mb-2 text-sm font-medium">Buscar</label>
+                            <input type="text" id="searchInput" placeholder="Buscar..." class="w-full border border-gray-300 text-gray-900 text-sm rounded-lg focus:blue1-sitca focus:border-blue1-sitca block  p-2.5 focus-visible:outline-0" maxlength="20">
+                        </div>
+                        <button id="searchButton" class="text-white bg-blue1-sitca hover:bg-blue2-sitca focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center cursor-pointer hidden">Buscar</button>
+                    </div>
+                    <div class="text-lg md:text-2xl font-bold border-b border-gray-300 pb-2 mb-3">Talleres Certificados</div>
+                    <div class="data-display overflow-x-auto lg:overflow-x-hidden" id="dataDisplay"></div>
+                    <canvas id="hiddenImageCanvas" style="position: absolute; top: -9999px; left: -9999px;"></canvas>   
+                </div>
+            </div>
+        </section> -->
+    </main>
+    <footer class="bg-linear-to-r from-blue2-sitca to-blue1-sitca pt-20 px-10 grid grid-cols-1 lg:grid-cols-4 gap-10" id="contentFooter"></footer>
+    <script>
+        $(document).ready(function() {
+            $('#searchInput').alpha();
+        });
+    </script>
+</body>
+</html>

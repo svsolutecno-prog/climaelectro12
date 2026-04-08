@@ -1,0 +1,192 @@
+@import "tailwindcss";
+@theme {
+    --color-yellow-sitca: #F68B00;
+    --color-blue1-sitca: #00569D;
+    --color-blue2-sitca: #132F55;
+    --font-sans: 'Inter', system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+html{
+    @apply scroll-smooth
+}
+body{
+    @apply h-screen text-neutral-700 
+}
+header:has(.right-0) {
+   background:#fff;
+}
+header:has(.right-0) .first-logo{
+   @apply hidden
+}
+header:has(.right-0) .second-logo {
+    @apply flex!
+}
+header:has(.right-0) .menu {
+    @apply invert-0!
+}
+header:has(.right-0) .nav-links a {
+    @apply text-neutral-700!
+}
+
+.nav-links {
+    @apply transition-all duration-500 md:static fixed bg-white md:bg-transparent md:min-h-fit h-[calc(100%-79px)] top-[79px] lg:py-5 py-8 md:w-auto w-full flex items-center px-5
+}
+.nav-links ul{
+    @apply flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 w-full text-center
+}
+.nav-links ul li a{
+    @apply font-medium transition-all duration-500
+}
+
+.index-button .custom-pagination__button{
+    @apply size-fit lg:w-full bg-white rounded-2xl cursor-pointer flex items-center justify-between py-2 pr-2 pl-2 lg:pl-4 flex-row-reverse text-xl 2xl:text-2xl transition hover:bg-blue1-sitca/10 duration-300 ease-in-out
+}
+.index-button .custom-pagination__button.is-active{
+    @apply font-bold text-yellow-sitca bg-linear-to-r from-yellow-sitca/30 lg:from-transparent to-yellow-sitca/30
+}
+.index-button .custom-pagination__button img{
+    @apply w-15 
+}
+.index-button .custom-pagination__button span{
+    @apply hidden lg:flex
+}
+.product-button .custom-pagination__button img{
+    @apply hidden
+}
+.product-button .custom-pagination__button{
+    @apply w-full cursor-pointer rounded-full p-3 border text-gray-500 border-gray-300 transition duration-300 ease-in-out
+}
+.product-button .custom-pagination__button.is-active{
+    @apply bg-yellow-sitca border-yellow-sitca text-white
+}
+
+.box-accordion{
+    @apply bg-neutral-50 rounded-2xl h-auto hover:shadow-xl transition-all duration-300 ease-in-out
+}
+.item-accordion .activeIcon{
+    @apply hidden text-xl 
+}
+.item-accordion .inactiveIcon{
+    @apply text-yellow-sitca text-xl 
+}
+.item-accordion.active .inactiveIcon{
+   @apply hidden 
+}
+.item-accordion.active .activeIcon{
+    @apply block
+}
+.item-accordion .header .icon{
+    @apply min-w-[15px] w-[15px] h-[15px] relative overflow-hidden flex items-center justify-center
+}
+.item-accordion .header .icon span:nth-child(1){
+    width:15px; height:2px; background:var(--color-yellow-sitca); display:block;position:absolute; transition: ease-in-out .3s;
+}
+.item-accordion .header .icon span:nth-child(2){
+    width:2px; height:15px; background:var(--color-yellow-sitca); display:block; position:absolute;top:0px; transition: ease-in-out .3s;
+}
+.item-accordion.active .header .icon span:nth-child(2){
+    top:-15px;
+}
+.item-accordion.active .header .icon span:nth-child(1){
+    background:var(--color-zinc-500);
+}
+.item-accordion .header{
+    @apply p-5 flex items-center gap-3 cursor-pointer h-[80px]
+}
+.item-accordion .header .title-accordion{
+    @apply font-semibold text-slate-800
+}
+.item-accordion .content {
+    @apply max-h-0 overflow-hidden block transition-all duration-600 ease-in-out
+}
+.item-accordion.active .content{
+    @apply max-h-[1000px] transition-all duration-600 ease-in-out
+} 
+.item-accordion .content .content-info {
+    @apply p-5 pt-0 text-sm text-justify
+}
+
+.data-item{
+    @apply border-b border-gray-300 pb-2 mb-3
+}
+.data-item:nth-last-child(1){
+    @apply border-b-0 pb-0 mb-0
+}
+.data-pos{
+    @apply hover:pl-5 transition-all duration-300 ease-in-out
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Black.woff2') format('woff2'),
+        url('fonts/Inter-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-ExtraBold.woff2') format('woff2'),
+        url('fonts/Inter-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Bold.woff2') format('woff2'),
+        url('fonts/Inter-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-SemiBold.woff2') format('woff2'),
+        url('fonts/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Medium.woff2') format('woff2'),
+        url('fonts/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.woff2') format('woff2'),
+        url('fonts/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Light.woff2') format('woff2'),
+        url('fonts/Inter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Thin.woff2') format('woff2'),
+        url('fonts/Inter-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
