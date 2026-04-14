@@ -1393,15 +1393,6 @@
     --tw-gradient-position: in oklab;
     background-image: radial-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(img\/background\.jpg\)\] {
-    background-image: url(img/background.jpg);
-  }
-  .bg-\[url\(img\/banner-01\.jpg\)\] {
-    background-image: url(img/banner-01.jpg);
-  }
-  .bg-\[url\(img\/bg-tech\.jpg\)\] {
-    background-image: url(img/bg-tech.jpg);
-  }
   .from-\[\#001D40\] {
     --tw-gradient-from: #001D40;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
