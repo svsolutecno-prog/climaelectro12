@@ -8,8 +8,8 @@
 html{
     @apply scroll-smooth
 }
-body{
-    @apply h-screen text-neutral-700 
+body {
+    @apply min-h-screen text-neutral-700 bg-white
 }
 header:has(.right-0) {
    background:#fff;

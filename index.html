@@ -1,14 +1,13 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="src/img/icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="src/img/icon.png">
-    <!-- <link rel="mask-icon" color="#EF7425" href="src/img/icon.png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/Isologo PNG.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/Isologo PNG.png">
 
-    <title>CE12</title>
+    <title>ClimaElectro12 | Portafolio de Ingeniería</title>
 
     <link href="src/output.css" rel="stylesheet">
     <link href="src/splide.min.css" rel="stylesheet">
@@ -17,623 +16,215 @@
     <script src="src/splide.min.js"></script>
     <script src="src/aos.js"></script>
     <script src="src/main.js" defer></script>
+
+    <style>
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 0.9; transform: scale(1.05); }
+        }
+        .animate-pulse-slow { animation: pulse-slow 4s infinite; }
+        .perspective-1000 { perspective: 1000px; }
+    </style>
 </head>
-<body>
-    <header class="fixed top-0 right-0 left-0 z-90 transition duration-300 ease-in-out" id="contentHeader"></header>
-    <main>
-        <a href="#principal" class="transition-all duration-500 fixed right-0 bg-white z-50 mb-6 mr-6 rounded-full w-[50px] h-[50px] flex justify-center items-center shadow-xl bottom-[-100%] px-3" id="top"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 328l144-144 144 144"/></svg></a>
-        <section class="w-full h-200 rounded-b-[100px] overflow-hidden relative bg-gray-950 flex items-center" id="principal">
-            <div class="bg-[url(img/    .jpg)] bg-cover bg-center absolute inset-0 w-full h-full opacity-50"></div>
-            <div class="bg-linear-to-r from-[#002356] to-transparent bg-cover absolute inset-0 w-full h-full"></div>
-            <div class="relative w-full px-5 md:px-15 lg:px-25 xl:px-35 2xl:px-50 text-3xl md:text-5xl xl:text-7xl text-white font-bold text-center xl:text-left">
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <b class="text-blue1-sitca">CLIMA</b>ELECTRO<b class="text-blue1-sitca">12</b> C.A
-                </div>   
-                <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                    <a href="support.html" class="flex gap-2 items-center text-lg md:text-2xl text-blue1-sitca bg-white w-fit px-5 py-3 rounded-full mt-8 mx-auto xl:mx-0 relative">
-                        Contáctanos
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-10 text-yellow-sitca" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M262.62 336L342 256l-79.38-80M330.97 256H170"/><path d="M256 448c106 0 192-86 192-192S362 64 256 64 64 150 64 256s86 192 192 192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <div class="w-full md:w-[700px] h-[700px] absolute -z-10">
-            <img class="object-contain w-full h-full top-[-50%] left-[-50%] absolute -z-10" src="src/img/circle-01.png" alt="circle">
+<body class="min-h-screen text-neutral-700 bg-white font-sans">
+<header class="fixed top-0 right-0 left-0 z-90 transition duration-300 ease-in-out" id="contentHeader"></header>
+
+<main>
+    <section class="w-full h-screen relative bg-blue-50 flex items-center overflow-hidden" id="principal">
+
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-[-10%] left-[-5%] w-[60%] h-[60%] bg-blue1-sitca/10 rounded-full blur-[140px] animate-pulse"></div>
+            <div class="absolute bottom-[-10%] right-[-5%] w-[50%] h-[50%] bg-blue1-sitca/5 rounded-full blur-[120px]"></div>
+
+            <div class="absolute inset-0 opacity-[0.2]" style="background-image: radial-gradient(#132F55 0.5px, transparent 0.5px); background-size: 30px 30px;"></div>
         </div>
-        <!-- <section class="-mt-40 md:-mt-20 relative px-10 md:px-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="800">
-            <div class="md:w-xl lg:w-3xl xl:w-5xl 2xl:w-7xl mx-auto flex flex-col md:flex-row gap-10 justify-center bg-white/70 backdrop-blur-3xl rounded-4xl py-10 px-5">
-                <div class="md:w-1/3 lg:w-3xs text-center">
-                    <div class="text-2xl lg:text-4xl 2xl:text-5xl font-bold mb-2"><span class="text-yellow-sitca">+</span> 180.000</div>
-                    <div class="text-base/5 lg:text-xl 2xl:text-2xl font-semibold opacity-50">Puntos de Venta vendidos</div>
-                </div>
-                <div class="md:w-1/3 lg:w-3xs text-center">
-                    <div class="text-2xl lg:text-4xl 2xl:text-5xl font-bold mb-2"><span class="text-yellow-sitca">+</span> 10M</div>
-                    <div class="text-base/5 lg:text-xl 2xl:text-2xl font-semibold opacity-50">Transacciones Procesadas</div>
-                </div>
-                <div class="md:w-1/3 lg:w-3xs text-center">
-                    <div class="text-2xl lg:text-4xl 2xl:text-5xl font-bold mb-2"><span class="text-yellow-sitca">+</span> 7</div>
-                    <div class="text-base/5 lg:text-xl 2xl:text-2xl font-semibold opacity-50">¡Años de experiencia en el mercado!</div>
-                </div>
-            </div>
-        </section> -->
-        <section class="py-15 lg:py-38 relative overflow-hidden">
-            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto px-5 md:px-10 xl:px-0">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    <div>
-                        <h4 class="text-2xl lg:text-4xl 2xl:text-5xl font-bold text-center lg:text-left" data-aos="zoom-in" data-aos-duration="1000">
-                             <span class="text-blue1-sitca">CLIMA</span>ELECTRO<span class="text-blue1-sitca">12</span>C.A</h4>
+
+        <div class="relative w-full max-w-[1800px] mx-auto px-8 md:px-20 lg:px-32 z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-5 flex flex-col items-center lg:items-start space-y-8 order-2 lg:order-1" data-aos="fade-right" data-aos-duration="1200">
+
+                    <div class="space-y-4 text-center lg:text-left">
+                        <span class="text-blue1-sitca font-black uppercase tracking-[0.2em] text-xs md:text-sm">Sistemas Térmicos & Línea Blanca</span>
+                        <h1 class="text-blue2-sitca text-5xl md:text-7xl font-black leading-[0.9] tracking-tighter">
+                            INGENIERÍA <br>
+                            <span class="text-blue1-sitca">DE CONFIANZA</span>
+                        </h1>
+                        <div class="h-1.5 w-20 bg-yellow-sitca rounded-full mx-auto lg:mx-0"></div>
                     </div>
-                    <div>
-                        <p class="text-justify" data-aos="fade-left" data-aos-delay="200">
-                            Nos especializamos en reparaciones de aparatos electrodomesticos, dando la mejor calidad y atencion del mercado, 
-                            con una experiencia y conocimiento garantizado de cualquier imprevisto que surja dentro y fuera de su hogar.
-                        </p>
-                    </div>
-                    <div class="bg-neutral-50 rounded-4xl p-8 flex flex-col gap-6 text-center" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-10 mx-auto" viewBox="0 0 65 65"><path class="fill-yellow-sitca" d="M52.8125 8.125H12.1875C11.1101 8.125 10.0767 8.55301 9.31488 9.31488C8.55301 10.0767 8.125 11.1101 8.125 12.1875V52.8125C8.125 53.8899 8.55301 54.9233 9.31488 55.6851C10.0767 56.447 11.1101 56.875 12.1875 56.875H52.8125C53.8899 56.875 54.9233 56.447 55.6851 55.6851C56.447 54.9233 56.875 53.8899 56.875 52.8125V12.1875C56.875 11.1101 56.447 10.0767 55.6851 9.31488C54.9233 8.55301 53.8899 8.125 52.8125 8.125ZM22.3438 40.625C22.7455 40.625 23.1382 40.7441 23.4723 40.9673C23.8063 41.1905 24.0666 41.5078 24.2204 41.8789C24.3741 42.2501 24.4143 42.6585 24.336 43.0525C24.2576 43.4466 24.0641 43.8085 23.7801 44.0926C23.496 44.3766 23.1341 44.5701 22.74 44.6485C22.346 44.7268 21.9376 44.6866 21.5664 44.5329C21.1953 44.3791 20.878 44.1188 20.6548 43.7848C20.4316 43.4507 20.3125 43.058 20.3125 42.6562C20.3125 42.1175 20.5265 41.6009 20.9074 41.2199C21.2884 40.839 21.805 40.625 22.3438 40.625ZM12.1875 12.1875H20.3125V36.9129C18.9572 37.3921 17.815 38.3349 17.0876 39.5748C16.3603 40.8147 16.0947 42.2718 16.3378 43.6886C16.5808 45.1054 17.317 46.3906 18.416 47.3172C19.5151 48.2437 20.9063 48.7519 22.3438 48.7519C23.7812 48.7519 25.1724 48.2437 26.2715 47.3172C27.3705 46.3906 28.1067 45.1054 28.3497 43.6886C28.5928 42.2718 28.3272 40.8147 27.5999 39.5748C26.8725 38.3349 25.7303 37.3921 24.375 36.9129V29.2779L36.5625 41.4654V52.8125H12.1875V12.1875ZM52.8125 52.8125H40.625V40.625C40.6252 40.3582 40.5728 40.0939 40.4709 39.8473C40.369 39.6008 40.2194 39.3767 40.0309 39.1879L24.375 23.5346V12.1875H32.5V18.2812C32.4998 18.5481 32.5522 18.8123 32.6541 19.0589C32.756 19.3055 32.9056 19.5296 33.0941 19.7184L37.1566 23.7809C36.7632 24.6 36.5601 25.4975 36.5625 26.4062C36.5625 27.6115 36.9199 28.7896 37.5895 29.7918C38.2591 30.7939 39.2108 31.5749 40.3243 32.0361C41.4378 32.4974 42.663 32.618 43.8451 32.3829C45.0272 32.1478 46.113 31.5674 46.9652 30.7152C47.8174 29.863 48.3978 28.7772 48.6329 27.5951C48.868 26.413 48.7474 25.1878 48.2861 24.0743C47.8249 22.9608 47.0439 22.0091 46.0418 21.3395C45.0396 20.6699 43.8615 20.3125 42.6562 20.3125C41.7473 20.3109 40.8498 20.5149 40.0309 20.9092L36.5625 17.4408V12.1875H52.8125V52.8125ZM42.6562 24.375C43.058 24.375 43.4507 24.4941 43.7848 24.7173C44.1188 24.9405 44.3791 25.2578 44.5329 25.6289C44.6866 26.0001 44.7268 26.4085 44.6485 26.8025C44.5701 27.1966 44.3766 27.5585 44.0926 27.8426C43.8085 28.1266 43.4466 28.3201 43.0525 28.3985C42.6585 28.4768 42.2501 28.4366 41.8789 28.2829C41.5078 28.1291 41.1905 27.8688 40.9673 27.5348C40.7441 27.2007 40.625 26.808 40.625 26.4062C40.625 25.8675 40.839 25.3509 41.2199 24.9699C41.6009 24.589 42.1175 24.375 42.6562 24.375Z"/></svg>
-                        <h6 class="text-xl font-semibold">Experiencia Avanzada</h6>  
-                        <p>Implementamos tecnicas de punta en todos nuestros procesos de reparacion para ofrecerte soluciones rapidas y eficientes.</p>
-                    </div>
-                    <div class="bg-neutral-50 rounded-4xl p-8 flex flex-col gap-6 text-center" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-10 mx-auto" viewBox="0 0 65 65"><path class="fill-yellow-sitca" d="M11 5.5L9.874 6.562L7.062 9.374L6 10.5L6.812 11.812L11 18.812L11.562 19.812H17.44L25.44 27.75C18.292 34.93 9.198 44.054 8.878 44.376C5.744 47.508 5.738 52.64 8.938 55.626C12.064 58.71 17.158 58.79 20.128 55.626L20.188 55.562L32.5 43.188L44.876 55.624L45.062 55.75C48.202 58.71 53.196 58.75 56.126 55.624V55.564H56.186C59.25 52.43 59.282 47.336 56.126 44.374L56.062 44.314L45.626 33.938C52.648 33.282 58.148 27.352 58.25 20.188H58.312C58.32 20.148 58.312 20.102 58.312 20.062V20C58.508 17.688 58.008 15.476 56.812 13.562L55.44 11.44L46.126 20.752L43.314 17.814L52.814 8.314L50.064 7.19C48.3103 6.41666 46.4166 6.01163 44.5 6C36.812 6 30.5 12.312 30.5 20C30.5 20.836 30.68 21.562 30.812 22.312C29.938 23.188 29.282 23.906 28.25 24.938L20.312 17V11.062L19.312 10.5L12.312 6.312L11 5.5ZM44.5 10C44.78 10 44.976 10.164 45.25 10.188L37.688 17.75L39.062 19.188L44.688 25L46.062 26.438L54 18.5C54.04 18.96 54.368 19.296 54.312 19.812V20C54.312 25.508 49.82 30 44.312 30C43.578 30 42.688 29.828 41.688 29.624L40.624 29.438L39.874 30.188L17.314 52.812H17.25V52.876C15.83 54.43 13.344 54.468 11.688 52.812V52.75H11.624C10.07 51.33 10.032 48.844 11.688 47.188C12.446 46.428 27.124 31.624 34.312 24.438L35.126 23.626L34.812 22.5C34.6206 21.6799 34.516 20.842 34.5 20C34.5 14.492 38.992 10 44.5 10ZM11.624 10.5L16.312 13.376V15.376L15.876 15.812H13.876L11 11.126L11.624 10.5ZM40.874 34.812L53.314 47.188V47.25H53.374C54.93 48.67 54.968 51.156 53.314 52.812H53.25V52.876C51.83 54.43 49.344 54.468 47.688 52.812L35.312 40.376L40.874 34.812Z"/></svg>
-                        <h6 class="text-xl font-semibold">Soporte Técnico Especializado</h6>  
-                        <p>Nuestro equipo de soporte técnico está compuesto por profesionales altamente capacitados y con experiencia en el sector.</p>
-                    </div>
-                    <!-- <div class="lg:col-span-2 bg-neutral-50 rounded-4xl p-8 flex items-center flex-col lg:flex-row gap-6 text-center" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
-                        <img class="w-70 lg:w-100 " src="src/img/alliance.png" alt="Sitca">
-                        <p>Hemos establecido alianzas con empresas líderes en el mercado para ofrecerte un valor añadido significativo.</p>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-        <section class="pb-10 lg:pb-30">
-            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto text-center px-5 md:px-10 xl:px-0">
-                <h4 class="text-2xl lg:text-4xl 2xl:text-5xl font-bold">¡Ofrecemos alta cantidad de soluciones para electrodomesticos!</h4>
-                <p class="opacity-50">En CLIMAELECTRO12 ofrecemos soluciones para los electrodomesticos tanto anticuados como modernos.</p>
-            </div>
-        </section>
-        <!-- <section class="bg-neutral-50 flex flex-col lg:flex-row xl:gap-10">
-            <div class="flex justify-end w-full lg:w-[40%] py-10 lg:py-20 px-10 lg:px-10"> 
-                <div class="custom-pagination index-button w-full lg:w-xs grid grid-cols-5 lg:grid-cols-1 gap-5 justify-items-center" data-aos="fade-right" data-aos-duration="1000">
-                </div>
-            </div>
-            <div class="bg-linear-to-bl from-blue1-sitca to-blue2-sitca w-full lg:w-[60%] py-10 px-10 lg:rounded-l-4xl flex justify-start text-white">
-                <div class="splide w-full xl:w-150 flex items-center">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                                    <div class="flex flex-col gap-3">
-                                        <div class="bg-white/10 h-[250px] lg:h-[340px] rounded-3xl p-10 flex justify-center">
-                                            <img src="src/img/pos-1.png" alt="Aisino A75" class="h-full">
-                                        </div>  
-                                        <div>
-                                            <h5 class="text-2xl 2xl:text-3xl font-semibold text-center">AIRES ACONDICIONADOS</h5>
-                                            <p class="font-light text-center opacity-50">
-                                                Punto de venta
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col gap-3">
-                                        <h6 class="font-semibold">Características</h6>
-                                        <p class="font-light text-white/60">Dispositivo con pantalla táctil de alta resolución e impresora integrada. Procesamiento en tiempo real y múltiples servicios.</p>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="60" d="M48 192h416M128 300h48v20h-48z"/></svg>
-                                            </div>
-                                            <p>Contactless</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><circle cx="256" cy="256.02" r="32" class="fill-white/50"/><path d="M184.25 192.25a96 96 0 000 127.52M327.77 319.77a96 96 0 000-127.52M133.28 141.28a168 168 0 000 229.44M378.72 370.72a168 168 0 000-229.44M435 416a240.34 240.34 0 000-320M77 96a240.34 240.34 0 000 320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Inalámbrico</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><path d="M332.41 310.59a115 115 0 00-152.8 0M393.46 249.54a201.26 201.26 0 00-274.92 0M447.72 182.11a288 288 0 00-383.44 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 416a32 32 0 1132-32 32 32 0 01-32 32z" class="fill-white/50"/></svg>
-                                            </div>
-                                            <p>Wi-Fi</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
-                                            </div>
-                                            <p>Global Band</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Recargas de servicios</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><ellipse cx="256" cy="128" rx="192" ry="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M448 214c0 44.18-86 80-192 80S64 258.18 64 214M448 300c0 44.18-86 80-192 80S64 344.18 64 300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M64 127.24v257.52C64 428.52 150 464 256 464s192-35.48 192-79.24V127.24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Dual-Band</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="128" y="16" width="256" height="480" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M176 16h24a8 8 0 018 8h0a16 16 0 0016 16h64a16 16 0 0016-16h0a8 8 0 018-8h24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Pantalla táctil</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><path d="M384 368h24a40.12 40.12 0 0040-40V168a40.12 40.12 0 00-40-40H104a40.12 40.12 0 00-40 40v160a40.12 40.12 0 0040 40h24" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><rect x="128" y="240" width="256" height="208" rx="24.32" ry="24.32" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path d="M384 128v-24a40.12 40.12 0 00-40-40H168a40.12 40.12 0 00-40 40v24" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><circle cx="392" cy="184" r="24" class="fill-white/50"/></svg>
-                                            </div>
-                                            <p>Impresora</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                                    <div class="flex flex-col gap-3">
-                                        <div class="bg-white/10 h-[250px] lg:h-[340px] rounded-3xl p-10 flex justify-center">
-                                            <img src="src/img/pos-2.png" alt="Aisino A80" class="h-full">
-                                        </div>
-                                        <div>
-                                            <h5 class="text-2xl 2xl:text-3xl font-semibold text-center">LAVADORAS</h5>
-                                            <p class="font-light text-center opacity-50">
-                                                Punto de venta
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col gap-3">
-                                        <h6 class="font-semibold">Características</h6>
-                                        <p class="font-light text-white/60">Diseño ligero y pantalla táctil con ticket digital. Ideal para negocios en movimiento.</p>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="60" d="M48 192h416M128 300h48v20h-48z"/></svg>
-                                            </div>
-                                            <p>Contactless</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><circle cx="256" cy="256.02" r="32" class="fill-white/50"/><path d="M184.25 192.25a96 96 0 000 127.52M327.77 319.77a96 96 0 000-127.52M133.28 141.28a168 168 0 000 229.44M378.72 370.72a168 168 0 000-229.44M435 416a240.34 240.34 0 000-320M77 96a240.34 240.34 0 000 320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Inalámbrico</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><path d="M332.41 310.59a115 115 0 00-152.8 0M393.46 249.54a201.26 201.26 0 00-274.92 0M447.72 182.11a288 288 0 00-383.44 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 416a32 32 0 1132-32 32 32 0 01-32 32z" class="fill-white/50"/></svg>
-                                            </div>
-                                            <p>Wi-Fi</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
-                                            </div>
-                                            <p>Global Band</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Recargas de servicios</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><ellipse cx="256" cy="128" rx="192" ry="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M448 214c0 44.18-86 80-192 80S64 258.18 64 214M448 300c0 44.18-86 80-192 80S64 344.18 64 300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M64 127.24v257.52C64 428.52 150 464 256 464s192-35.48 192-79.24V127.24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Dual-Band</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="128" y="16" width="256" height="480" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M176 16h24a8 8 0 018 8h0a16 16 0 0016 16h64a16 16 0 0016-16h0a8 8 0 018-8h24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Pantalla táctil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                                    <div class="flex flex-col gap-3">
-                                        <div class="bg-white/10 h-[250px] lg:h-[340px] rounded-3xl p-10 flex justify-center">
-                                            <img src="src/img/pos-3.png" alt="AMP 8200" class="h-full">
-                                        </div>
-                                        <div>
-                                            <h5 class="text-2xl 2xl:text-3xl font-semibold text-center">NEVERAS</h5>
-                                            <p class="font-light text-center opacity-50">
-                                                Punto de venta
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col gap-3">
-                                        <h6 class="font-semibold">Características</h6>
-                                        <p class="font-light text-white/60">Alta resolución, impresora integrada y procesamiento en tiempo real.</p>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="60" d="M48 192h416M128 300h48v20h-48z"/></svg>
-                                            </div>
-                                            <p>Contactless</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><circle cx="256" cy="256.02" r="32" class="fill-white/50"/><path d="M184.25 192.25a96 96 0 000 127.52M327.77 319.77a96 96 0 000-127.52M133.28 141.28a168 168 0 000 229.44M378.72 370.72a168 168 0 000-229.44M435 416a240.34 240.34 0 000-320M77 96a240.34 240.34 0 000 320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Inalámbrico</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><path d="M332.41 310.59a115 115 0 00-152.8 0M393.46 249.54a201.26 201.26 0 00-274.92 0M447.72 182.11a288 288 0 00-383.44 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 416a32 32 0 1132-32 32 32 0 01-32 32z" class="fill-white/50"/></svg>
-                                            </div>
-                                            <p>Wi-Fi</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
-                                            </div>
-                                            <p>Global Band</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Recargas de servicios</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><ellipse cx="256" cy="128" rx="192" ry="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M448 214c0 44.18-86 80-192 80S64 258.18 64 214M448 300c0 44.18-86 80-192 80S64 344.18 64 300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M64 127.24v257.52C64 428.52 150 464 256 464s192-35.48 192-79.24V127.24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Dual-Band</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="128" y="16" width="256" height="480" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M176 16h24a8 8 0 018 8h0a16 16 0 0016 16h64a16 16 0 0016-16h0a8 8 0 018-8h24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Pantalla táctil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                                    <div class="flex flex-col gap-3">
-                                        <div class="bg-white/10 h-[250px] lg:h-[340px] rounded-3xl p-10 flex justify-center">
-                                            <img src="src/img/pos-4.png" alt="AMP 8400" class="h-full">
-                                        </div>
-                                        <div>
-                                            <h5 class="text-2xl 2xl:text-3xl font-semibold text-center">COCINAS</h5>
-                                            <p class="font-light text-center opacity-50">
-                                                Punto de venta
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col gap-3">
-                                        <h6 class="font-semibold">Características</h6>
-                                        <p class="font-light text-white/60">Diseño compacto, ticket digital y todas las funciones clave.</p>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="60" d="M48 192h416M128 300h48v20h-48z"/></svg>
-                                            </div>
-                                            <p>Contactless</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><circle cx="256" cy="256.02" r="32" class="fill-white/50"/><path d="M184.25 192.25a96 96 0 000 127.52M327.77 319.77a96 96 0 000-127.52M133.28 141.28a168 168 0 000 229.44M378.72 370.72a168 168 0 000-229.44M435 416a240.34 240.34 0 000-320M77 96a240.34 240.34 0 000 320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Inalámbrico</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><path d="M332.41 310.59a115 115 0 00-152.8 0M393.46 249.54a201.26 201.26 0 00-274.92 0M447.72 182.11a288 288 0 00-383.44 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 416a32 32 0 1132-32 32 32 0 01-32 32z" class="fill-white/50"/></svg>
-                                            </div>
-                                            <p>Wi-Fi</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
-                                            </div>
-                                            <p>Global Band</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Recargas de servicios</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><ellipse cx="256" cy="128" rx="192" ry="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M448 214c0 44.18-86 80-192 80S64 258.18 64 214M448 300c0 44.18-86 80-192 80S64 344.18 64 300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M64 127.24v257.52C64 428.52 150 464 256 464s192-35.48 192-79.24V127.24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Dual-Band</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="128" y="16" width="256" height="480" rx="48" ry="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M176 16h24a8 8 0 018 8h0a16 16 0 0016 16h64a16 16 0 0016-16h0a8 8 0 018-8h24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Pantalla táctil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                                    <div class="flex flex-col gap-3">
-                                        <div class="bg-white/10 h-[250px] lg:h-[340px] rounded-3xl p-10 flex justify-center">
-                                            <img src="src/img/pos-5.png" alt="AMP 2200" class="h-full">
-                                        </div>
-                                        <div>
-                                            <h5 class="text-2xl 2xl:text-3xl font-semibold text-center">OTROS</h5>
-                                            <p class="font-light text-center opacity-50">
-                                                Punto de venta
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col gap-3">
-                                        <h6 class="font-semibold">Características</h6>
-                                        <p class="font-light text-white/60">PIN Pad compacto y liviano, ideal para conexión con dispositivos móviles vía Bluetooth.</p>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="60" d="M48 192h416M128 300h48v20h-48z"/></svg>
-                                            </div>
-                                            <p>Contactless</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><circle cx="256" cy="256.02" r="32" class="fill-white/50"/><path d="M184.25 192.25a96 96 0 000 127.52M327.77 319.77a96 96 0 000-127.52M133.28 141.28a168 168 0 000 229.44M378.72 370.72a168 168 0 000-229.44M435 416a240.34 240.34 0 000-320M77 96a240.34 240.34 0 000 320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Inalámbrico</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
-                                            </div>
-                                            <p>Bluetooth</p>
-                                        </div>
-                                        <div class="flex gap-3 data-pos">
-                                            <div class="w-5">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/50" viewBox="0 0 512 512"><rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                                            </div>
-                                            <p>Recargas de servicios</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                  </div>
-                </div>
-            </div>
-        </section> -->
-        <div class="w-full md:w-[700px] h-[700px] absolute right-0 -z-1 overflow-hidden">
-            <img class="object-contain w-full h-full top-[-50%] right-[-50%] absolute" src="src/img/circle-02.png" alt="circle">
-        </div>
-        <!-- <section class="pt-25 pb-15 lg:pb-38 lg:pt-38 overflow-hidden">
-            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-20 px-10 xl:px-0">
-                <div class="relative lg:order-2">
-                    <div class="px-10 sm:px-20 2xl:px-40">
-                        <div class="bg-linear-to-br from-blue1-sitca/50 to-yellow-sitca/50 h-[340px] rounded-4xl relative">
-                            <div class="bg-linear-to-br from-blue1-sitca/0 to-blue1-sitca/50 backdrop-blur-2xl w-25 h-25 rounded-4xl absolute -mt-6 -ml-15 flex items-center justify-center" data-aos="flip-right" data-aos-duration="1000">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-13 text-white" viewBox="0 0 512 512"><path d="M64 192v-72a40 40 0 0140-40h75.89a40 40 0 0122.19 6.72l27.84 18.56a40 40 0 0022.19 6.72H408a40 40 0 0140 40v40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M479.9 226.55L463.68 392a40 40 0 01-39.93 40H88.25a40 40 0 01-39.93-40L32.1 226.55A32 32 0 0164 192h384.1a32 32 0 0131.8 34.55z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                            </div>
-                            <div class="absolute z-1 left-[-60%] md:left-[0] lg:left-[-30%] bottom-0 w-lg mx-auto"> 
-                                <img src="src/img/img-box.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-5 lg:order-1" data-aos="zoom-in-up" data-aos-duration="1000">
-                    <h4 class="text-2xl lg:text-4xl 2xl:text-5xl font-bold text-yellow-sitca text-center lg:text-left">Recaudos</h4>
-                    <p>
-                        Para poder brindarte el mejor servicio y cumplir con nuestros estándares de seguridad, te solicitamos amablemente la siguiente documentación.
+
+                    <p class="text-slate-600 text-lg md:text-xl leading-relaxed max-w-md text-center lg:text-left font-medium">
+                        Especialistas en instalación y mantenimiento de equipos industriales y residenciales.
                     </p>
-                    <div class="flex flex-col gap-4" id="accordion-section-2">
-                        <div class="box-accordion item-accordion">
-                            <div class="header justify-between">
-                                <div class="title-accordion">Persona Natural</div>
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-5 h-5" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
+
+                    <div class="flex justify-center lg:justify-start">
+                        <a href="support.html" class="group flex gap-3 items-center bg-yellow-sitca hover:bg-blue2-sitca text-white px-8 py-3 rounded-full shadow-lg shadow-yellow-600/20 transition-all duration-500 hover:scale-105">
+                            <span class="font-black text-lg uppercase tracking-wider text-white">Soporte Técnico</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-6 fill-white group-hover:rotate-12 transition-transform">
+                                <path d="M256 48C141.1 48 48 141.1 48 256l0 40c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-40C0 114.6 114.6 0 256 0S512 114.6 512 256l0 144.1c0 48.6-39.4 88-88.1 88L313.6 488c-8.3 14.3-23.8 24-41.6 24l-32 0c-26.5 0-48-21.5-48-48s21.5-48 48-48l32 0c17.8 0 33.3 9.7 41.6 24l110.4 .1c22.1 0 40-17.9 40-40L464 256c0-114.9-93.1-208-208-208zM144 208l16 0c17.7 0 32 14.3 32 32l0 112c0 17.7-14.3 32-32 32l-16 0c-35.3 0-64-28.7-64-64l0-48c0-35.3 28.7-64 64-64zm224 0c35.3 0 64 28.7 64 64l0 48c0 35.3-28.7 64-64 64l-16 0c-17.7 0-32-14.3-32-32l0-112c0-17.7 14.3-32 32-32l16 0z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 flex justify-center lg:justify-end order-1 lg:order-2" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="relative group">
+
+                        <div class="absolute -inset-10 bg-blue1-sitca/10 rounded-full blur-[100px] group-hover:bg-blue1-sitca/20 transition-all duration-1000"></div>
+
+                        <div class="relative z-10 p-2 md:p-4 bg-white/40 rounded-[80px] backdrop-blur-md border border-white/60 shadow-[0_40px_80px_-15px_rgba(0,0,0,0.1)] transition-all duration-700 group-hover:scale-[1.02]">
+
+                            <div class="bg-white/80 rounded-[76px] p-12 md:p-20 shadow-inner relative overflow-hidden">
+                                <img src="src/img/Isologo PNG.png"
+                                     alt="ClimaElectro12"
+                                     class="relative w-[280px] md:w-[420px] lg:w-[500px] drop-shadow-2xl transition-all duration-700 group-hover:scale-105">
+
+                                <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                                    <div class="absolute top-0 -left-[150%] w-full h-full
+                                            bg-gradient-to-r from-transparent via-white/50 to-transparent
+                                            -skew-x-12 transition-all duration-[1500ms]
+                                            group-hover:left-[150%]"></div>
                                 </div>
-                            </div>
-                            <div class="content">
-                                <div class="content-info">
-                                    <ol class="list-disc pl-6 pb-2">
-                                        <li>Copia de Cédula de Identidad</li>
-                                        <li>Copia del Registro Único de Información fiscal (RIF) vigente</li>
-                                        <li>Constancia de Trabajo o Certificación de Ingreso</li>
-                                        <li>Referencias Personales (2)</li>
-                                        <li>Copia de Recibo de servicios públicos o constancia de residencia.</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-accordion item-accordion">
-                            <div class="header justify-between">
-                                <div class="title-accordion">Persona Jurídica</div>
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-5 h-5" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/></svg>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class="content-info">
-                                    <ol class="list-disc pl-6 pb-2">
-                                        <li>Copia de Cédula de Identidad de los representantes legales; apoderados o firmas autorizadas.</li>
-                                        <li>Copia del Registro Único de Información Fiscal (RIF) vigente</li>
-                                        <li>(Representantes Legales; apoderados o firmas autorizadas)</li>
-                                        <li>Copia del Registro Único de Información Fiscal (RIF) vigente</li>
-                                        <li>(Persona Jurídica, Gubernamental o Comuna)</li>
-                                        <li>Copia del Acta Constitutiva y todas las asambleas hasta la actualidad</li>
-                                        <li>Copia de la última declaración de Impuesto sobre la renta.</li>
-                                        <li>Una (1) referencia bancaria verificable o una referencia personal con fecha de emisión no mayor a 3 meses</li>
-                                        <li>Copia de Recibo de servicios o constancia de residencia</li>
-                                        <li>Carta de instrucción de movilización de la cuenta en original emitida por la empresa. Debe tener sello y membrete de lo empresa, indicando el régimen de movilización de la cuenta. (Cédula y RIF personas autorizadas)</li>
-                                    </ol>
+
+                                <div class="absolute top-6 right-6 md:top-10 md:right-10 bg-blue2-sitca text-white px-4 py-2 rounded-2xl shadow-xl flex items-center gap-3 z-20 border border-blue1-sitca/30">
+                                    <div class="w-2.5 h-2.5 bg-green-400 rounded-full animate-ping"></div>
+                                    <span class="font-bold text-[10px] md:text-xs uppercase tracking-tighter">Soporte Activo 24/7</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
-        <section class="pb-15 lg:pb-38 relative">
-            <div class="w-full md:w-[700px] h-[700px] absolute left-0 bottom-0">
-                <img class="object-contain w-full h-full bottom-[-50%] left-[-50%] absolute" src="src/img/circle-01.png" alt="circle">
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-20">
+            <div class="w-px h-10 bg-blue2-sitca"></div>
+        </div>
+
+    </section>
+    <section class="py-20 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-6xl font-black text-slate-900 tracking-tighter">NUESTROS <span class="text-blue1-sitca">TRABAJOS</span></h2>
+                <p class="text-slate-500 mt-4 text-lg">Excelencia garantizada en cada proyecto ejecutado.</p>
+                <div class="h-1.5 w-24 bg-yellow-sitca mx-auto mt-6 rounded-full"></div>
             </div>
-            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-20 px-5 md:px-10 xl:px-0 relative">
-                <div class="bg-linear-to-br from-blue2-sitca to-blue1-sitca rounded-4xl relative p-10 text-center lg:text-left overflow-hidden lg:h-145">
-                    <h4 class="text-2xl lg:text-4xl 2xl:text-5xl font-bold text-white relative">Preguntas</h4>
-                    <h4 class="text-2xl lg:text-4xl 2xl:text-5xl font-bold text-white relative">Frecuentes</h4>
-                    <div class="absolute right-0 bottom-0 w-80 h-80 -mb-20 -mr-20" data-aos="flip-right" data-aos-duration="1000">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-white/10" viewBox="0 0 512 512"><path d="M256 80a176 176 0 10176 176A176 176 0 00256 80z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M200 202.29s.84-17.5 19.57-32.57C230.68 160.77 244 158.18 256 158c10.93-.14 20.69 1.67 26.53 4.45 10 4.76 29.47 16.38 29.47 41.09 0 26-17 37.81-36.37 50.8S251 281.43 251 296" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="28"/><circle cx="250" cy="348" r="20" class="fill-white/10"/></svg>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-[40px] bg-slate-900 h-96 shadow-xl" data-aos="flip-left">
+                    <img src="src/img/trabajo-01.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" alt="Instalación Industrial">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue2-sitca via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 p-8">
+                        <span class="bg-yellow-sitca text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mantenimiento</span>
+                        <h5 class="text-2xl font-bold text-white mt-2">Sistemas Centrales</h5>
                     </div>
                 </div>
-                <div class="flex flex-col gap-4" id="accordion-section-2" data-aos="zoom-in-up" data-aos-duration="1000">
-                    <div class="box-accordion item-accordion active">
-                        <div class="header">
-                            <div class="icon"><span></span><span></span></div>
-                            <div class="title-accordion">¿Que tipo de electrodomesticos arreglamos?</div>
-                        </div>
-                        <div class="content">
-                            <div class="content-info">
-                                <ol class="list-decimal pl-6 pb-2 marker:font-bold">
-                                    <li>Aires acondicionados comerciales y domésticos</li>
-                                    <li>Cava cuarto</li>
-                                    <li>Lavadoras</li>
-                                    <li>Secadora</li>
-                                    <li>Neveras</li>
-                                    <li>Frezzer</li>
-                                    <li>Nevera exhibidora</li>
-                                    <li>Hornos</li>
-                                    <li>Cocinas</li>
-                                    <li>Viñetas</li>
-                                    <li>Fabricador de hielo</li>
-                                </ol>
-                            </div>
-                        </div>
+                <div class="group relative overflow-hidden rounded-[40px] bg-slate-900 h-96 shadow-xl" data-aos="flip-left" data-aos-delay="200">
+                    <img src="src/img/trabajo-02.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" alt="Reparación">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue2-sitca via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 p-8">
+                        <span class="bg-blue-400 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Instalación</span>
+                        <h5 class="text-2xl font-bold text-white mt-2">Unidades Split</h5>
                     </div>
-                    <div class="box-accordion item-accordion">
-                        <div class="header">
-                            <div class="icon"><span></span><span></span></div>
-                            <div class="title-accordion">¿Cómo Los contacto?</div>
-                        </div>
-                        <div class="content">
-                            <div class="content-info">
-                                <ol class="list-decimal pl-6 pb-2 marker:font-bold">
-                                    <li>Contactanos a nuestro numero directo: <strong>0424-11111111</strong></li>
-                                    <li>Contactanos A nuestro instagram: <strong>@instagram</strong></li>
-                                    <li>Envianos un correo a la siguiente direccion: <strong>correo@gmail.com</strong></li>
-                                </ol>
-                            </div>
-                        </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-[40px] bg-slate-900 h-96 shadow-xl" data-aos="flip-left" data-aos-delay="400">
+                    <img src="src/img/trabajo-03.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" alt="Línea Blanca">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue2-sitca via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 p-8">
+                        <span class="bg-blue1-sitca text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Reparación</span>
+                        <h5 class="text-2xl font-bold text-white mt-2">Refrigeración Comercial</h5>
                     </div>
-                    <div class="box-accordion item-accordion">
-                        <div class="header">
-                            <div class="icon"><span></span><span></span></div>
-                            <div class="title-accordion">¿Como es la atencion?</div>
-                        </div>
-                        <div class="content">
-                            <div class="content-info">
-                                <ol class="list-decimal pl-6 pb-2 marker:font-bold">
-                                    <li>Nuestra atencion es 100% personalizada</li>
-                                    <li>100% confiable y amable</li>
-                                    <li>Siempre atenderemos lo mas rapido posible, y especificamente a lo que desea</li>
-                                </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 lg:py-24 bg-slate-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 relative z-10 items-stretch">
+
+            <div class="bg-linear-to-br from-blue2-sitca to-blue1-sitca rounded-[40px] md:rounded-[50px] p-8 md:p-12 text-white overflow-hidden relative shadow-2xl flex flex-col justify-center min-h-[250px] lg:min-h-full">
+                <div class="relative z-10">
+                    <h4 class="text-3xl md:text-4xl lg:text-6xl font-black leading-tight mb-4 tracking-tighter uppercase">
+                        Especificaciones
+                    </h4>
+                    <p class="text-blue-200 text-lg md:text-xl italic opacity-90">
+                        ¿Qué tipo de equipos atendemos?
+                    </p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="absolute -right-6 -bottom-6 w-48 h-48 text-white/10 pointer-events-none" viewBox="0 0 512 512">
+                    <path d="M256 80a176 176 0 10176 176A176 176 0 00256 80z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
+                </svg>
+            </div>
+
+            <div class="flex flex-col gap-4 self-center" id="accordion-section-2" data-aos="fade-left">
+                <div class="box-accordion item-accordion active bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden transition-all duration-500">
+                    <div class="header p-6 md:p-8 flex justify-between items-center bg-slate-50/50">
+                        <div class="flex gap-4 items-center">
+                            <div class="w-3 h-3 bg-yellow-sitca rounded-full animate-pulse"></div>
+                            <div class="title-accordion font-extrabold text-slate-800 text-xl lg:text-2xl uppercase tracking-tight">
+                                Catálogo de Servicios
                             </div>
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </section>
-        <section class="py-15 lg:py-38 bg-sky-50 relative">
-            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-20 items-center px-5 md:px-10 xl:px-0">
-                <div class="flex flex-col gap-5">
-                    <h4 class="text-2xl lg:text-4xl 2xl:text-5xl font-bold text-center lg:text-left"> <span class="text-blue1-sitca">Atención al Cliente</span></h4>
-                    <p class="text-justify">
-                        En CLIMAELECTRO12C.A ofrecemos la mayor y grata atencion que desea, personalizada y con mucha disposicion a su caso.
-                        Nos encargamos que tenga siempre una amena atencion antes y despues de recibir nuestros servicios de soporte, tanto por telefono como presencial.
-                    </p>
-                    <!-- <h6n class="text-base lg:text-xl 2xl:text-2xl font-semibold text-center lg:text-left">
-                        ¡Síguenos en nuestras redes ahora y mantente al tanto de todas nuestras actividades!
-                    </h6> -->
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div data-aos="zoom-in" data-aos-duration="1000">
-                        <div class="bg-white rounded-4xl relative p-5 md:p-10 flex md:flex-col items-center justify-center gap-5 md:h-60 hover:shadow-xl hover:scale-105 cursor-pointer transition-all duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca w-8 md:w-12 mx-auto" viewBox="0 0 512 512"><path d="M277.42 247a24.68 24.68 0 00-4.08-5.47L255 223.44a21.63 21.63 0 00-6.56-4.57 20.93 20.93 0 00-23.28 4.27c-6.36 6.26-18 17.68-39 38.43C146 301.3 71.43 367.89 37.71 396.29a16 16 0 00-1.09 23.54l39 39.43a16.13 16.13 0 0023.67-.89c29.24-34.37 96.3-109 136-148.23 20.39-20.06 31.82-31.58 38.29-37.94a21.76 21.76 0 003.84-25.2zM478.43 201l-34.31-34a5.44 5.44 0 00-4-1.59 5.59 5.59 0 00-4 1.59h0a11.41 11.41 0 01-9.55 3.27c-4.48-.49-9.25-1.88-12.33-4.86-7-6.86 1.09-20.36-5.07-29a242.88 242.88 0 00-23.08-26.72c-7.06-7-34.81-33.47-81.55-52.53a123.79 123.79 0 00-47-9.24c-26.35 0-46.61 11.76-54 18.51-5.88 5.32-12 13.77-12 13.77a91.29 91.29 0 0110.81-3.2 79.53 79.53 0 0123.28-1.49C241.19 76.8 259.94 84.1 270 92c16.21 13 23.18 30.39 24.27 52.83.8 16.69-15.23 37.76-30.44 54.94a7.85 7.85 0 00.4 10.83l21.24 21.23a8 8 0 0011.14.1c13.93-13.51 31.09-28.47 40.82-34.46s17.58-7.68 21.35-8.09a35.71 35.71 0 0121.3 4.62 13.65 13.65 0 013.08 2.38c6.46 6.56 6.07 17.28-.5 23.74l-2 1.89a5.5 5.5 0 000 7.84l34.31 34a5.5 5.5 0 004 1.58 5.65 5.65 0 004-1.58L478.43 209a5.82 5.82 0 000-8z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
-                            <p class="text-base/5 2xl:text-lg/5 font-semibold text-center w-[calc(100%-32px)] md:w-full">Solventamos Incidencias</p>
-                        </div>
-                    </div>
-                
-                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
-                        <div class="bg-white rounded-4xl relative p-5 md:p-10 flex md:flex-col items-center justify-center gap-5 md:h-60 hover:shadow-xl hover:scale-105 cursor-pointer transition-all duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca w-8 md:w-12 mx-auto" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="56" ry="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="60" d="M48 192h416M128 300h48v20h-48z"/></svg>
-                            <p class="text-base/5 2xl:text-lg/5 font-semibold text-center w-[calc(100%-32px)] md:w-full">Variedad de Formas de Pago</p>
-                        </div>
-                    </div>
-                
-                </div>
-            </div>
-        </section>
-        <!-- <section class="py-15 lg:py-38 bg-blue1-sitca text-white relative overflow-hidden">
-            <div class="w-full h-full bg-[url(img/background.jpg)] bg-cover inset-0 absolute opacity-70 lg:opacity-100"></div>
-            <div class="w-full h-full bg-linear-to-t lg:bg-linear-to-r from-transparent to-blue2-sitca inset-0 absolute"></div>
-            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-5 md:px-10 xl:px-0 relative">
-                <div class="flex items-end justify-center">
-                    <div data-aos="fade-up" data-aos-duration="1000">
-                        <a href="https://www.instagram.com/sitca_ve/" target="_blank" class="flex gap-2 items-center text-2xl text-neutral-700 bg-white px-5 py-3 rounded-full hover:shadow-xl hover:scale-105 cursor-pointer transition-all duration-500">
-                            <img src="src/img/instagram.png"  class="w-6" alt="@sitca_ve">
-                            @sitca_ve
-                        </a>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-5" data-aos="fade-left" data-aos-duration="1000">
-                    <h4 class="text-2xl lg:text-4xl 2xl:text-5xl font-bold text-center lg:text-left">Operativos <span class="text-yellow-sitca">SITCA</span></h4>
-                    <p class="font-light">
-                        Cada semana realizamos jornadas especiales para brindarte atención directa y resolver tus dudas y solicitudes.
-                    </p>
-                    <p class="text-yellow-sitca font-semibold">¿Qué ofrecemos en nuestros operativos?</p>
-                    <div class="flex gap-4 items-center">
-                        <div class="w-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 112v288M400 256H112"/></svg>
-                        </div>
-                        <p class="font-medium">Atención personalizada</p>
-                    </div>
-                    <div class="flex gap-4 items-center">
-                        <div class="w-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 112v288M400 256H112"/></svg>
-                        </div>
-                        <p class="font-medium">Solución inmediata de incidencias</p>
-                    </div>
-                    <div class="flex gap-4 items-center">
-                        <div class="w-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 112v288M400 256H112"/></svg>
-                        </div>
-                        <p class="font-medium">Recepción y verificación de documentación</p>
-                    </div>
-                    <div class="flex gap-4 items-center">
-                        <div class="w-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 112v288M400 256H112"/></svg>
-                        </div>
-                        <p class="font-medium">Asesoría y apoyo en la apertura de tu cuenta en Bancamiga</p>
-                    </div>
-                    <div class="flex gap-4 items-center">
-                        <div class="w-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon text-yellow-sitca" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 112v288M400 256H112"/></svg>
-                        </div>
-                        <p class="font-medium">Entrega de tu punto de venta (POS)</p>
+                    <div class="content px-6 md:px-10 pb-8">
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 text-slate-600 font-semibold pt-4">
+                            <li class="flex items-start gap-3 group">
+                                <span class="text-blue1-sitca group-hover:scale-125 transition-transform">✔</span>
+                                <span>Aires Acondicionados</span>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <span class="text-blue1-sitca group-hover:scale-125 transition-transform">✔</span>
+                                <span>Cava Cuarto</span>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <span class="text-blue1-sitca group-hover:scale-125 transition-transform">✔</span>
+                                <span>Lavadoras y Secadoras</span>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <span class="text-blue1-sitca group-hover:scale-125 transition-transform">✔</span>
+                                <span>Neveras y Freezer</span>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <span class="text-blue1-sitca group-hover:scale-125 transition-transform">✔</span>
+                                <span>Cocinas y Hornos</span>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <span class="text-blue1-sitca group-hover:scale-125 transition-transform">✔</span>
+                                <span>Fabricadores de Hielo</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section> -->
-        <section class="py-15 lg:py-20 bg-blue-400 relative">
-            <div class="w-full xl:w-5xl 2xl:w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-20 items-center px-5 md:px-10 xl:px-0">
-                <div class="flex gap-5 items-center flex-wrap text-center justify-center md:text-left md:justify-start">
-                    
-                    <h6 class="text-2xl font-semibold">CLIMAELECTRO12 C.A.</h6>
-                </div>
-                <div class="">
-                    <p class="text-justify ">
-                        Nos comprometemos a dar la <strong>mejor ayuda y soporte</strong> para su electrodomestico y asi poder asegurar su vida util, si gastar recursos y siempre garantizar el mejor trabajo para usted.
-                    </p>
+
+        </div>
+    </section>
+
+    <section class="py-20 lg:py-32 bg-slate-100 border-y border-slate-200 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center px-6 relative z-10">
+            <div class="flex justify-center lg:justify-start">
+                <div class="relative group p-6 perspective-1000">
+                    <div class="absolute -inset-6 bg-blue1-sitca/20 rounded-full blur-3xl group-hover:bg-blue1-sitca/40 transition-all duration-1000 animate-pulse-slow"></div>
+                    <img src="src/img/Isologo PNG.png" alt="Sello de Calidad" class="relative w-48 md:w-56 lg:w-72 drop-shadow-2xl">
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="bg-linear-to-r from-blue2-sitca to-blue1-sitca pt-20 px-10 grid grid-cols-1 lg:grid-cols-4 gap-10" id="contentFooter"></footer>
+            <div class="relative" data-aos="fade-up">
+                <span class="absolute -top-12 -left-8 text-[120px] text-slate-200 font-serif pointer-events-none opacity-50">“</span>
+                <p class="text-slate-600 leading-relaxed text-xl md:text-2xl italic relative z-10">
+                    Nos comprometemos a brindar la <strong class="text-slate-900 font-bold border-b-4 border-blue1-sitca/30">mejor asistencia técnica</strong>, prolongando la vida útil de sus equipos con honestidad y profesionalismo.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="contentFooter"></footer>
+
+<script>
+    $(document).ready(function() {
+        AOS.init({ once: true });
+    });
+</script>
 </body>
 </html>
